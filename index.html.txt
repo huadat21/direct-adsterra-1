@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREAKING: Uncensored Footage Leaked Online Sparking Global Outrage</title>
+    <style>
+        /* Ultra-lightweight CSS for sub-0.5s loading speed */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 0; padding: 0; background-color: #f3f4f6; color: #1f2937; }
+        .wrapper { max-width: 550px; margin: 0 auto; background: #ffffff; padding: 15px; min-height: 100vh; box-sizing: border-box; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+        .nav-bar { border-bottom: 3px solid #dc2626; padding-bottom: 8px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .brand { color: #dc2626; font-weight: 900; font-size: 22px; tracking: -0.5px; }
+        .live-pulse { width: 8px; height: 8px; background: #dc2626; border-radius: 50%; display: inline-block; animation: blink 1s infinite; }
+        .meta-info { color: #4b5563; font-size: 11px; margin-top: 4px; text-transform: uppercase; font-weight: 600; }
+        h1 { font-size: 22px; line-height: 1.25; color: #111827; margin: 10px 0; font-weight: 800; }
+        .alert-tag { background: #dc2626; color: #fff; padding: 2px 6px; font-size: 10px; font-weight: bold; border-radius: 2px; display: inline-block; text-transform: uppercase; }
+        .blurred-box { position: relative; width: 100%; height: 220px; margin: 15px 0; border-radius: 6px; overflow: hidden; background: #000; }
+        .blurred-img { width: 100%; height: 100%; object-fit: cover; filter: blur(12px); opacity: 0.6; }
+        .blur-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px; box-sizing: border-box; }
+        .blur-text { font-weight: bold; font-size: 16px; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+        .story-p { font-size: 15px; color: #374151; text-align: left; margin-bottom: 15px; }
+        .ad-slot { width: 100%; text-align: center; margin: 15px 0; background: #f9fafb; border: 1px dashed #d1d5db; min-height: 60px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #9ca3af; }
+        
+        /* HIGHLY CURIOSITY CLICK BUTTON */
+        .click-trigger { display: block; background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: white; text-align: center; padding: 15px 10px; border-radius: 6px; font-weight: 800; text-decoration: none; margin: 20px 0; font-size: 18px; box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3); border: 2px solid #fff; animation: shake 2s infinite; }
+        
+        @keyframes blink { 0% { opacity: 0.2; } 50% { opacity: 1; } 100% { opacity: 0.2; } }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); } 20%, 40%, 60%, 80% { transform: translateX(3px); } }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Header Section -->
+        <div class="nav-bar">
+            <div class="brand">🌐 GLOBAL NEWS DAILY</div>
+            <div><span class="live-pulse"></span> <span style="font-size: 11px; font-weight: bold; color: #dc2626;">LIVE</span></div>
+        </div>
+        <div class="meta-info">Updated: Just Now | 📌 Trending Worldwide</div>
+
+        <!-- AD SLOT 1: Top Banner (Recommended: 468x60 or 320x50 Mobile) -->
+        <div class="ad-slot">
+            <!-- PLACE YOUR ADSTERRA TOP BANNER CODE HERE -->
+            <span>[Advertisement]</span>
+        </div>
+
+        <!-- Main Content -->
+        <div>
+            <span class="alert-tag">Leaked Media</span>
+            <h1>Viral 45-Second Clip Vanishing From Social Media Platforms After Reaching 12 Million Views Overnight</h1>
+            
+            <p class="story-p">
+                Major tech platforms are currently deploying aggressive automated filters to completely scrub a newly leaked video file that surfaced early this morning. According to inside sources, accounts attempting to re-upload the footage are facing permanent suspension without warning...
+            </p>
+
+            <!-- Blurred Video Thumbnail Mimic to drive curiosity -->
+            <div class="blurred-box">
+                <img class="blurred-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" alt="Leaked Video">
+                <div class="blur-overlay">
+                    <div class="blur-text">⚠️ Content Warning: This media has been restricted in your region.</div>
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="white" style="opacity: 0.9; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+            </div>
+
+            <!-- AD SLOT 2: Native/Square Banner (Recommended: 300x250) -->
+            <div class="ad-slot" style="min-height: 250px;">
+                <!-- PLACE YOUR ADSTERRA 300x250 BANNER CODE HERE -->
+                <span>[Advertisement]</span>
+            </div>
+
+            <p class="story-p">
+                Cybersecurity experts strongly advise users against clicking unauthorized external links on forums claiming to host the "full unedited version," as many are fronts for credential phishing. The original uploader's identity remains unverified.
+            </p>
+
+            <!-- THE BIG CURIOSITY TRIGGER BUTTON -->
+            <!-- Note: You can replace '#' with an Adsterra Direct Link if you want to monetize the click directly -->
+            <a href="#" class="click-trigger">▶ UNMUTE & WATCH FULL VIDEO HERE</a>
+        </div>
+
+        <!-- AD SLOT 3: Bottom Banner (Recommended: 300x250 or 468x60) -->
+        <div class="ad-slot">
+            <!-- PLACE YOUR ADSTERRA BOTTOM BANNER CODE HERE -->
+            <span>[Advertisement]</span>
+        </div>
+    </div>
+
+</body>
+</html>
