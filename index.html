@@ -14,7 +14,9 @@
         .meta-info { color: #4b5563; font-size: 11px; margin-top: 4px; text-transform: uppercase; font-weight: 600; }
         h1 { font-size: 22px; line-height: 1.25; color: #111827; margin: 10px 0; font-weight: 800; }
         .alert-tag { background: #dc2626; color: #fff; padding: 2px 6px; font-size: 10px; font-weight: bold; border-radius: 2px; display: inline-block; text-transform: uppercase; }
-        .blurred-box { position: relative; width: 100%; height: 220px; margin: 15px 0; border-radius: 6px; overflow: hidden; background: #000; }
+        
+        /* Chuyển đổi hộp video thành một thẻ bấm được */
+        .blurred-box { display: block; position: relative; width: 100%; height: 220px; margin: 15px 0; border-radius: 6px; overflow: hidden; background: #000; text-decoration: none; }
         .blurred-img { width: 100%; height: 100%; object-fit: cover; filter: blur(12px); opacity: 0.6; }
         .blur-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px; box-sizing: border-box; }
         .blur-text { font-weight: bold; font-size: 16px; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
@@ -38,10 +40,11 @@
         </div>
         <div class="meta-info">Updated: Just Now | 📌 Trending Worldwide</div>
 
-        <!-- AD SLOT 1: Top Banner (Recommended: 468x60 or 320x50 Mobile) -->
+        <!-- AD SLOT 1: Top Banner (Đã chèn link dạng click ẩn) -->
         <div class="ad-slot">
-            <!-- PLACE YOUR ADSTERRA TOP BANNER CODE HERE -->
-            <span>[Advertisement]</span>
+            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" style="color: #9ca3af; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                👉 CLICK HERE TO UNBLOCK CONTENT
+            </a>
         </div>
 
         <!-- Main Content -->
@@ -53,34 +56,35 @@
                 Major tech platforms are currently deploying aggressive automated filters to completely scrub a newly leaked video file that surfaced early this morning. According to inside sources, accounts attempting to re-upload the footage are facing permanent suspension without warning...
             </p>
 
-            <!-- Blurred Video Thumbnail Mimic to drive curiosity -->
-            <div class="blurred-box">
+            <!-- Bấm vào ảnh video mờ này cũng sẽ mở link Adsterra của bạn -->
+            <a class="blurred-box" href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank">
                 <img class="blurred-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" alt="Leaked Video">
                 <div class="blur-overlay">
                     <div class="blur-text">⚠️ Content Warning: This media has been restricted in your region.</div>
                     <svg width="50" height="50" viewBox="0 0 24 24" fill="white" style="opacity: 0.9; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));"><path d="M8 5v14l11-7z"/></svg>
                 </div>
-            </div>
+            </a>
 
-            <!-- AD SLOT 2: Native/Square Banner (Recommended: 300x250) -->
-            <div class="ad-slot" style="min-height: 250px;">
-                <!-- PLACE YOUR ADSTERRA 300x250 BANNER CODE HERE -->
-                <span>[Advertisement]</span>
+            <!-- AD SLOT 2: Native/Square Banner -->
+            <div class="ad-slot" style="min-height: 150px;">
+                <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" style="color: #9ca3af; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                    [Advertisement - Click to Close]
+                </a>
             </div>
 
             <p class="story-p">
                 Cybersecurity experts strongly advise users against clicking unauthorized external links on forums claiming to host the "full unedited version," as many are fronts for credential phishing. The original uploader's identity remains unverified.
             </p>
 
-            <!-- THE BIG CURIOSITY TRIGGER BUTTON -->
-            <!-- Note: You can replace '#' with an Adsterra Direct Link if you want to monetize the click directly -->
-            <a href="#" class="click-trigger">▶ UNMUTE & WATCH FULL VIDEO HERE</a>
+            <!-- NÚT BẤM CHÍNH: Đã chèn link Adsterra mở tab mới -->
+            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" class="click-trigger">▶ UNMUTE & WATCH FULL VIDEO HERE</a>
         </div>
 
-        <!-- AD SLOT 3: Bottom Banner (Recommended: 300x250 or 468x60) -->
+        <!-- AD SLOT 3: Bottom Banner -->
         <div class="ad-slot">
-            <!-- PLACE YOUR ADSTERRA BOTTOM BANNER CODE HERE -->
-            <span>[Advertisement]</span>
+            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" style="color: #9ca3af; text-decoration: none;">
+                [Trending Stories Around The Web]
+            </a>
         </div>
     </div>
 
