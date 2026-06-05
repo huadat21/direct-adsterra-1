@@ -15,19 +15,35 @@
         h1 { font-size: 22px; line-height: 1.25; color: #111827; margin: 10px 0; font-weight: 800; }
         .alert-tag { background: #dc2626; color: #fff; padding: 2px 6px; font-size: 10px; font-weight: bold; border-radius: 2px; display: inline-block; text-transform: uppercase; }
         
-        /* Chuyển đổi hộp video thành một thẻ bấm được */
-        .blurred-box { display: block; position: relative; width: 100%; height: 220px; margin: 15px 0; border-radius: 6px; overflow: hidden; background: #000; text-decoration: none; }
+        /* Interactive Blurry Video Container */
+        .blurred-box { display: block; position: relative; width: 100%; height: 220px; margin: 15px 0; border-radius: 6px; overflow: hidden; background: #000; text-decoration: none; transition: transform 0.2s; border: 2px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .blurred-box:hover { transform: scale(1.02); }
         .blurred-img { width: 100%; height: 100%; object-fit: cover; filter: blur(12px); opacity: 0.6; }
         .blur-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px; box-sizing: border-box; }
         .blur-text { font-weight: bold; font-size: 16px; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
         .story-p { font-size: 15px; color: #374151; text-align: left; margin-bottom: 15px; }
-        .ad-slot { width: 100%; text-align: center; margin: 15px 0; background: #f9fafb; border: 1px dashed #d1d5db; min-height: 60px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #9ca3af; }
         
-        /* HIGHLY CURIOSITY CLICK BUTTON */
-        .click-trigger { display: block; background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: white; text-align: center; padding: 15px 10px; border-radius: 6px; font-weight: 800; text-decoration: none; margin: 20px 0; font-size: 18px; box-shadow: 0 4px 15px rgba(225, 29, 72, 0.3); border: 2px solid #fff; animation: shake 2s infinite; }
+        /* AD SLOTS & BUTTONS */
+        .ad-slot { width: 100%; text-align: center; margin: 15px 0; min-height: 60px; display: flex; align-items: center; justify-content: center; box-sizing: border-box; }
         
+        /* Premium Gradient Banner Style */
+        .premium-banner { display: flex; text-decoration: none; color: #fff; width: 100%; height: 60px; border-radius: 6px; font-weight: 700; font-size: 14px; position: relative; overflow: hidden; box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25); border: 2px solid transparent; background: linear-gradient(135deg, #111 0%, #333 100%); transition: background 0.3s, border-color 0.3s; align-items: center; }
+        .premium-banner:hover { background: linear-gradient(135deg, #222 0%, #444 100%); border-color: gold; }
+        .premium-banner::after { content: '⚡ AD'; position: absolute; top: 0; right: 0; background: gold; color: #000; font-size: 8px; padding: 2px 4px; border-bottom-left-radius: 4px; text-transform: uppercase; }
+        
+        /* Call-To-Action Link Style */
+        .action-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 800; font-size: 16px; position: relative; transition: all 0.2s; box-shadow: 0 3px 6px rgba(0,0,0,0.2); width: 100%; box-sizing: border-box; }
+        .action-link:active { transform: translateY(1px); box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        
+        /* High CTR Alert / Pulse Button */
+        .alert-action { background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); color: white; border: 2px solid gold; animation: smooth-pulse 1.5s infinite; }
+        
+        /* Accent Content Bypass Link */
+        .info-action { background: transparent; border: 2px solid #dc2626; color: #dc2626; text-transform: uppercase; font-size: 14px; }
+        .info-action:hover { background: #dc2626; color: white; }
+
+        @keyframes smooth-pulse { 0% { transform: scale(1); box-shadow: 0 3px 6px rgba(225, 29, 72, 0.3); } 50% { transform: scale(1.02); box-shadow: 0 5px 12px rgba(225, 29, 72, 0.5); } 100% { transform: scale(1); box-shadow: 0 3px 6px rgba(225, 29, 72, 0.3); } }
         @keyframes blink { 0% { opacity: 0.2; } 50% { opacity: 1; } 100% { opacity: 0.2; } }
-        @keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-3px); } 20%, 40%, 60%, 80% { transform: translateX(3px); } }
     </style>
 </head>
 <body>
@@ -40,10 +56,10 @@
         </div>
         <div class="meta-info">Updated: Just Now | 📌 Trending Worldwide</div>
 
-        <!-- AD SLOT 1: Top Banner (Đã chèn link dạng click ẩn) -->
+        <!-- AD SLOT 1: Top Banner (With your Adsterra Link) -->
         <div class="ad-slot">
-            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" style="color: #9ca3af; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                👉 CLICK HERE TO UNBLOCK CONTENT
+            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" class="premium-banner">
+                <span style="display: block; padding-left: 20px;">▶ CLICK HERE TO BYPASS SERVER RESTRICTION</span>
             </a>
         </div>
 
@@ -56,19 +72,19 @@
                 Major tech platforms are currently deploying aggressive automated filters to completely scrub a newly leaked video file that surfaced early this morning. According to inside sources, accounts attempting to re-upload the footage are facing permanent suspension without warning...
             </p>
 
-            <!-- Bấm vào ảnh video mờ này cũng sẽ mở link Adsterra của bạn -->
+            <!-- Video Thumbnail Trigger (With your Adsterra Link) -->
             <a class="blurred-box" href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank">
                 <img class="blurred-img" src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" alt="Leaked Video">
                 <div class="blur-overlay">
                     <div class="blur-text">⚠️ Content Warning: This media has been restricted in your region.</div>
-                    <svg width="50" height="50" viewBox="0 0 24 24" fill="white" style="opacity: 0.9; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));"><path d="M8 5v14l11-7z"/></svg>
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="white" style="opacity: 0.9; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)); border: 3px solid gold; border-radius: 50%; padding: 10px;"><path d="M8 5v14l11-7z"/></svg>
                 </div>
             </a>
 
-            <!-- AD SLOT 2: Native/Square Banner -->
-            <div class="ad-slot" style="min-height: 150px;">
-                <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" style="color: #9ca3af; text-decoration: none; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                    [Advertisement - Click to Close]
+            <!-- AD SLOT 2: Native Banner (With your Adsterra Link) -->
+            <div class="ad-slot" style="min-height: 80px;">
+                <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" class="action-link info-action">
+                    <span style="font-size: 1.2em;">🔓</span> Uncensor Player & Close Server Ads
                 </a>
             </div>
 
@@ -76,14 +92,14 @@
                 Cybersecurity experts strongly advise users against clicking unauthorized external links on forums claiming to host the "full unedited version," as many are fronts for credential phishing. The original uploader's identity remains unverified.
             </p>
 
-            <!-- NÚT BẤM CHÍNH: Đã chèn link Adsterra mở tab mới -->
-            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" class="click-trigger">▶ UNMUTE & WATCH FULL VIDEO HERE</a>
+            <!-- THE MAIN CTA BUTTON (With your Adsterra Link) -->
+            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" class="action-link alert-action" style="margin: 25px 0;">▶ CLICK TO UNMUTE & WATCH FULL VIDEO HERE</a>
         </div>
 
-        <!-- AD SLOT 3: Bottom Banner -->
+        <!-- AD SLOT 3: Bottom Banner (With your Adsterra Link) -->
         <div class="ad-slot">
-            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" style="color: #9ca3af; text-decoration: none;">
-                [Trending Stories Around The Web]
+            <a href="https://www.effectivecpmnetwork.com/xaih4q6x?key=d17a0d4220d17107e9c8f1f7a296b397" target="_blank" class="premium-banner" style="background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);">
+                <span style="display: block; padding-left: 20px;">[Trending Stories Around The Web - Next Story]</span>
             </a>
         </div>
     </div>
